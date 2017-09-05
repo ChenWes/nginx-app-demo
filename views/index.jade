@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title  
+  p Host : #{hostname}
+  p System : #{systemtype}
+  each addressitem in ipaddress
+    p #{addressitem.network} : #{addressitem.address}  
